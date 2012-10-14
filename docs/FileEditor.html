@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generated-by" content="Markdown PRO, http://markdownpro.com"/>
+<title></title>
+<style type="text/css">
+
+</style><style type="text/css">
+@charset "utf-8";
+
+/**
+ * This is based on Florian Wolters markdown.css, just slightly modified:
+ * - Grayer background.
+ * - Slightly more rounded corners for code.
+ *
+ * /Tommy
+ * ______________________________________________________________________________
+ *
+ * markdown.css
+ *
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program. If not, see http://gnu.org/licenses/lgpl.txt.
+ *
+ * @project      Weblog and Open Source Projects of Florian Wolters
+ * @version      GIT: $Id$
+ * @package      xhtml-css
+ * @author       Florian Wolters <florian.wolters.85@googlemail.com>
+ * @copyright    2012 Florian Wolters
+ * @cssdoc       version 1.0-pre
+ * @license      http://gnu.org/licenses/lgpl.txt GNU Lesser General Public License
+ * @link         http://github.com/FlorianWolters/jekyll-bootstrap-theme
+ * @media        all
+ * @valid        true
+ */
+
+body {
+    font-family: Helvetica, Arial, Freesans, clean, sans-serif;
+padding:1em;
+margin:auto;
+max-width:55em;
+background:#eeeeee;
+font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    color: #000000;
+    font-size: 28px;
+}
+
+h2 {
+    border-bottom: 1px solid #CCCCCC;
+    color: #000000;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    color: #777777;
+    background-color: inherit;
+    font-size: 14px;
+}
+
+hr {
+    height: 0.2em;
+    border: 0;
+    color: #CCCCCC;
+    background-color: #CCCCCC;
+}
+
+p, blockquote, ul, ol, dl, li, table, pre {
+    margin: 15px 0;
+}
+
+code, pre {
+    border-radius: 5px;
+    background-color: #F8F8F8;
+    color: inherit;
+}
+
+code {
+    border: 1px solid #EAEAEA;
+    margin: 0 2px;
+    padding: 0 5px;
+}
+
+pre {
+    border: 1px solid #CCCCCC;
+    line-height: 1.25em;
+    overflow: auto;
+    padding: 6px 10px;
+}
+
+pre > code {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited {
+    color: #4183C4;
+    background-color: inherit;
+    text-decoration: none;
+}
+
+</style></head>
+<body>
+<p><img src="images/FileEditor-eroded-brown.png"/></p>
+
+<h1>FileEditor 2.0</h1>
+
+<h4>Copyright © 2012 Natusoft AB</h4>
+
+<h2>Introduction</h2>
+
+<p>FileEditor provides a programmable only text file editor. No gui is
+available. It supplies most of the features you expect from an editor
+including selections.</p>
+
+<p>It is useful for advanced code generation and first version created
+a couple of years ago was made to script a set of special refactorings
+using BeanShell. It has now been updated and more heavily tested,
+and released as open source in hope it can be useful for others.</p>
+
+<p><strong>Please Note:</strong>
+  A previous version of this utility exists on <a href="http://fileeditor.sf.net/">http://fileeditor.sf.net/</a>.
+  As of version 2.0 this has moved to github and also changed package from
+  <em>se.biltmore….</em> to <em>se.natusoft….</em> The package change was required due to a
+  bad decision by me to use the package name of a company I was part owner
+  of, but in the end didn&#39;t work out as intended and I left. Thereby I 
+  have changed package to my own company name, which I really should have
+  used from the beginning looking in the hind mirror :-). </p>
+
+<h2>Maven Usage</h2>
+
+<p>If you are using maven, add the following to your pom:</p>
+
+<pre><code>  &lt;project&gt;
+    ...
+    &lt;repositories&gt;
+        ...
+        &lt;repository&gt;
+            &lt;id&gt;maven-natusoft-se&lt;/id&gt;
+            &lt;name&gt;Natusoft maven repository&lt;/name&gt;
+            &lt;url&gt;http://maven.natusoft.se/&lt;/url&gt;
+        &lt;/repository&gt;
+    &lt;/repositories&gt;
+    ...
+  &lt;/project&gt;
+</code></pre>
+
+<p>Then add the following dependency:</p>
+
+<pre><code>  &lt;dependency&gt;
+    &lt;groupId&gt;se.natusoft.tools&lt;/groupId&gt;
+    &lt;artifactId&gt;FileEditor&lt;/artifactId&gt;
+    &lt;version&gt;2.0&lt;/version&gt;
+  &lt;/dependency&gt;
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>Each instance of TextFileEdtior can edit one TextBuffer. The default constructor creates a TextFileBuffer instance. Text buffers can however be gotten and set on a TextFileEditor instance, so you can really edit as many buffers you want with the same TextFileEdtior instance.</p>
+
+<p>TextBuffer is an interface implemented by TextFileBuffer. The idea was that you could wrap some other object and make it editable (as long as it handles text). I have no idea if that is useful or not, but it was
+a simple thing to do.</p>
+
+<p>The editor always has a current position within the editor. It starts at 1,1 (column,line). Column and line numbers are 1 based. There is a Position class that represent a position that some methods use.
+There are methods to move the current position up, down, right, and left.</p>
+
+<p>All find methods move the current position to the first character of the found text on success. They also return a boolean to indicate if the find was a success or not so that you can do if() on it.</p>
+
+<p>Example:</p>
+
+<pre><code>if(editor.find(&quot;start&quot;)) {
+  editor.startSelection();
+  editor.find(&quot;end&quot;);
+  editor.endSelection();
+  editor.replaceSelectionWithTextBuffer(newTextBuff);
+}
+</code></pre>
+
+<p>You can check if the current position is on first column, first line,
+last column, or last line.</p>
+
+<p>All find*() methods search criteria are regular expressions.</p>
+
+<p>You can mark a text block as selected. You can do
+selectToMatching(char start, char end) which will select to the next
+&#39;end&#39; character at level 0. Level is incremented on start and decremented
+on end. </p>
+
+<p>Example:</p>
+
+<pre><code>selectToMatching(&#39;(&#39;, &#39;)&#39;);
+</code></pre>
+
+<p>You can find and replace text within the buffer. You can replace a
+selection. You can replace a line.</p>
+
+<p>You can insert lines. You can insert another file by loading it into
+a separate buffer and then inserting the buffer.</p>
+
+<p>You can delete words, lines, and selections.</p>
+
+<p>You can get a line or a word.</p>
+
+<p>Creating an editor and loading a file into it:</p>
+
+<pre><code>TextFileEditor editor = new TextFileEditor();
+editor.load(&quot;some.file&quot;);
+
+...
+
+editor.save();
+</code></pre>
+
+<p>If you want to create an editor instance, pass it to some user script
+that will manipulate the text in the editor, but want to inhibit the
+script to load other files or to save the changes, do:</p>
+
+<pre><code>editor.setAllowLoadSave(false);
+</code></pre>
+
+<p>But remember to set it back to true again before you save it! This is
+of course not fail safe since the script can also call setAllowLoadSave().</p>
+
+<p>Here is an example of usage copied from another tool where I use
+FileEditor to update source code:</p>
+
+<pre><code>if (!editor.find(&quot;import &quot; + annotationsPkg + &quot;.&quot;)) {
+    System.out.println(&quot;   Adding &#39;import &quot; + annotationsPkg + &quot;.*&#39;&quot;);
+    if (!editor.find(&quot;^import&quot;)) { 
+        if (editor.find(&quot;package&quot;)) {
+            editor.insertLine(&quot;&quot;);
+        }
+    }
+    else {
+        editor.findLast(&quot;^import&quot;);
+    }
+    editor.insertLine(&quot;import &quot; + annotationsPkg + &quot;.*;&quot;);
+}
+
+editor.moveToTopOfFile();
+if (!editor.find(&quot;import &quot; + enumsPkg + &quot;.Source&quot;)) {
+    editor.find(&quot;import &quot; + codelicmgrPkg);
+    System.out.println(&quot;   Adding &#39;import &quot; + enumsPkg + &quot;.Source&#39;&quot;);
+    editor.insertLine(&quot;import &quot; + enumsPkg + &quot;.Source;&quot;);
+}
+</code></pre>
+
+<p>There is not much more to say about this. See the <a href="file:apidocs/index.html">javadoc</a>, it shows
+all available functionality. </p>
+
+<h2>Author / Contact</h2>
+
+<p>My name is Tommy Svensson and I can be reached at <a href="mailto:tommy@natusoft.se">tommy@natusoft.se</a></p>
+
+<h2>License (Apache 2.0)</h2>
+
+<p>This code is open source and released under the Apache 2.0 software license available at <a href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</a> and below.</p>
+
+<p>The markdown CSS for the generated html document is based on Florian Wolters markdown.css. </p>
+
+<h3>License text</h3>
+
+<p>Apache License</p>
+
+<p>Version 2.0, January 2004</p>
+
+<p><a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a></p>
+
+<p>TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</p>
+
+<ol>
+<li><p>Definitions.</p>
+
+<p>&quot;License&quot; shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.</p>
+
+<p>&quot;Licensor&quot; shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.</p>
+
+<p>&quot;Legal Entity&quot; shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, &quot;control&quot; means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.</p>
+
+<p>&quot;You&quot; (or &quot;Your&quot;) shall mean an individual or Legal Entity exercising permissions granted by this License.</p>
+
+<p>&quot;Source&quot; form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.</p>
+
+<p>&quot;Object&quot; form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.</p>
+
+<p>&quot;Work&quot; shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).</p>
+
+<p>&quot;Derivative Works&quot; shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.</p>
+
+<p>&quot;Contribution&quot; shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, &quot;submitted&quot; means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as &quot;Not a Contribution.&quot;</p>
+
+<p>&quot;Contributor&quot; shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.</p></li>
+<li><p><strong>Grant of Copyright License.</strong> Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.</p></li>
+<li><p><strong>Grant of Patent License.</strong> Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.</p></li>
+<li><p><strong>Redistribution.</strong> You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:</p>
+
+<p>You must give any other recipients of the Work or Derivative Works a copy of this License; and</p>
+
+<p>You must cause any modified files to carry prominent notices stating that You changed the files; and</p>
+
+<p>You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and</p>
+
+<p>If the Work includes a &quot;NOTICE&quot; text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License. You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.</p></li>
+<li><p><strong>Submission of Contributions.</strong> Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.</p></li>
+<li><p><strong>Trademarks.</strong> This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.</p></li>
+<li><p><strong>Disclaimer of Warranty.</strong> Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.</p></li>
+<li><p><strong>Limitation of Liability.</strong> In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.</p></li>
+<li><p><strong>Accepting Warranty or Additional Liability.</strong> While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.</p></li>
+</ol>
+
+<p>END OF TERMS AND CONDITIONS</p>
+
+<p>APPENDIX: How to apply the Apache License to your work
+To apply the Apache License to your work, attach the following boilerplate notice, with the fields enclosed by brackets &quot;[]&quot; replaced with your own identifying information. (Don&#39;t include the brackets!) The text should be enclosed in the appropriate comment syntax for the file format. We also recommend that a file or class name and description of purpose be included on the same &quot;printed page&quot; as the copyright notice for easier identification within third-party archives.</p>
+
+<pre><code>Copyright [yyyy] [name of copyright owner]
+
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+
+</body>
+</html>

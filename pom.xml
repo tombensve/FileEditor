@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>se.natusoft.tools.fileeditor</groupId>
+    <artifactId>FileEditor</artifactId>
+    <packaging>jar</packaging>
+    <version>2.0</version>
+    <name>FileEditor</name>
+
+    <url>http://fileeditor.sourceforge.net/</url>
+
+    <!--
+        Project Information
+    -->
+    <description>
+        Provides a programmable only text file editor. No gui is available. It supplies
+        most of the features you expect from an editor including selections.
+    </description>
+    <properties>
+        <copyrightYear>2009</copyrightYear>
+        <copyrightHolder>Natusoft AB</copyrightHolder>
+        <copyrightHolderWeb>http://www.natusoft.se/</copyrightHolderWeb>
+    </properties>
+    <organization>
+        <name>${copyrightHolder}</name>
+        <url>${copyrightHolderWeb}</url>
+    </organization>
+    <inceptionYear>${copyrightYear}</inceptionYear>
+    <licenses>
+        <license>
+            <name>Apache 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Tommy Svensson</name>
+            <email>tommy@natusoft.se</email>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:http://fileeditor.hg.sourceforge.net:8000/hgroot/fileeditor/fileeditor</connection>
+        <developerConnection>scm:ssh://user@fileeditor.hg.sourceforge.net/hgroot/fileeditor/fileeditor</developerConnection>
+        <url>http://fileeditor.hg.sourceforge.net/hgweb/fileeditor/</url>
+    </scm>
+    <issueManagement>
+        <system>sourceforge</system>
+        <url>http://sourceforge.net/projects/fileeditor/support</url>
+    </issueManagement>
+
+    <!--
+        Dependencies
+    -->
+    <dependencies>
+        <dependency>
+            <groupId>se.natusoft.tools.codelicmgr</groupId>
+            <artifactId>CodeLicenseManager-annotations-retention-source</artifactId>
+            <version>1.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!--
+        Building
+    -->
+    <build>
+        <plugins>
+            <!--
+                Setup for java 5.
+            -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.0.2</version>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+
+            <!--
+                Provide Javadoc skin. Other javadoc config under <reporting/>.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.6.1</version>
+                <dependencies>
+                </dependencies>
+
+                <executions>
+                    <execution>
+                        <id>jar-javadoc</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <phase>deploy</phase>
+                        <configuration>
+                            <attach>true</attach>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--
+                Define project assemblies.
+            -->
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <!--version>2.2-beta-5</version-->
+                <configuration>
+                    <descriptors>
+                        <descriptor>file:${basedir}/src/assembly/bin-dist.xml</descriptor>
+                    </descriptors>
+                </configuration>
+            </plugin>
+
+            <!--
+                Force checksums when installing to repository.
+
+                I suspect that this might be unneccesarry since I think
+                deploy creates checksums anyhow when deploying to external
+                repository.
+            -->
+            <plugin>
+                <artifactId>maven-install-plugin</artifactId>
+                <configuration>
+                    <createChecksum>true</createChecksum>
+                </configuration>
+            </plugin>
+
+            <!--
+                Copy relevant license files to target on install.
+            -->
+            <plugin>
+                <groupId>se.natusoft.tools.codelicmgr</groupId>
+                <artifactId>CodeLicenseManager-maven-plugin</artifactId>
+                <version>1.0.1</version>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>se.natusoft.tools.codelicmgr</groupId>
+                        <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
+                        <version>1.0.1</version>
+                    </dependency>
+                </dependencies>
+
+                <executions>
+                    <execution>
+                        <id>install-licence-info</id>
+                        <goals>
+                            <goal>install</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+
+                            <installOptions>
+                                <verbose>true</verbose>
+                                <licenseDir>${basedir}/target/license</licenseDir>
+                                <thirdpartyLicenseDir>${basedir}/target/license/thirdparty</thirdpartyLicenseDir>
+                            </installOptions>
+
+                            <createMavenPDFPluginLicenseAPTVersions>true</createMavenPDFPluginLicenseAPTVersions>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--
+        Distribution Management
+    -->
+    <distributionManagement>
+        <repository>
+            <id>deploy-maven-natusoft-se</id>
+            <name>maven.natusoft.se</name>
+            <url>file:/LVolumes/Development/repository/maven/maven.natusoft.se</url>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>maven-natusoft-se</id>
+            <name>Natusoft maven repository</name>
+            <url>http://maven.natusoft.se/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>plugin-maven-natusoft-se</id>
+            <name>Natusoft maven repository.</name>
+            <url>http://maven.natusoft.se/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <!--
+        Site / Reporting
+    -->
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.6.1</version>
+                <configuration>
+                    <show>public</show>
+                    <excludePackageNames>se.natusoft.tools.fileeditor.internal*</excludePackageNames>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <!--version>2.4.2</version-->
+            </plugin>
+
+        </plugins>
+    </reporting>
+
+    <!--
+        Profiles
+    -->
+    <profiles>
+        <profile>
+            <id>apply-licence-info</id>
+            <build>
+                <plugins>
+                    <plugin>
+
+                        <groupId>se.natusoft.tools.codelicmgr</groupId>
+                        <artifactId>CodeLicenseManager-maven-plugin</artifactId>
+                        <version>1.0.1</version>
+
+                        <dependencies>
+                            <dependency>
+                                <groupId>se.natusoft.tools.codelicmgr</groupId>
+                                <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
+                                <version>1.0.1</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>se.natusoft.tools.codelicmgr</groupId>
+                                <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
+                                <version>1.0.1</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>se.natusoft.tools.codelicmgr</groupId>
+                                <artifactId>CodeLicenseManager-source-updater-html-xml</artifactId>
+                                <version>1.0.1</version>
+                            </dependency>
+                        </dependencies>
+
+                        <configuration>
+                            <project>
+                                <codeVersion>${project.version}</codeVersion>
+                            </project>
+                            <!-- All options are optional. -->
+                            <codeOptions>
+                                <verbose>true</verbose>
+                                <!-- If not set uses extension on source file to resolve. -->
+                                <codeLanguage><!-- by source extension. -->
+                                </codeLanguage>
+                                <!-- If true updates the license information in source code. -->
+                                <updateLicenseInfo>true</updateLicenseInfo>
+                                <!-- If true updates the copyright information in source code. -->
+                                <updateCopyright>true</updateCopyright>
+                                <!-- If true updates the project information in source code. -->
+                                <updateProject>true</updateProject>
+                                <!-- If true will add authors information to source files that does not have it. This is not always implemented! -->
+                                <addAuthorsBlock>true</addAuthorsBlock>
+                                <!-- The directories to scan for source code to update with project & license information. -->
+                                <sourceCodeDirs>
+                                    src/main/java/**/.*.java,src/test/java/**/.*.java,src/assembly/**/.*.xml
+                                </sourceCodeDirs>
+
+                            </codeOptions>
+
+                            <userData>
+                                <!--name></name>
+                                <value></value-->
+                            </userData>
+
+                        </configuration>
+
+                        <executions>
+                            <execution>
+                                <id>apply-licence-info</id>
+                                <goals>
+                                    <goal>apply</goal>
+                                </goals>
+                                <phase>generate-sources</phase>
+                            </execution>
+                        </executions>
+
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>
