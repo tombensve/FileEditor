@@ -135,7 +135,7 @@
 
                             <createLicensesMarkdown>true</createLicensesMarkdown>
                             <markdownTargetSubdir>docs</markdownTargetSubdir>
-                            <markdownLinkPrefix>https://github.com/tombensve/FileEditor/blob/master/docs</markdownLinkPrefix>
+                            <markdownLinkPrefix>https://github.com/tombensve/FileEditor/blob/master/docs/</markdownLinkPrefix>
                         </configuration>
                     </execution>
                 </executions>
