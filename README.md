@@ -1,4 +1,4 @@
-# MarkdownDoc
+# FileEditor
 
 Copyright © 2012 Natusoft AB
 
