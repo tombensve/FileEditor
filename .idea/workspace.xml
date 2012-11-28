@@ -6,53 +6,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/licenses.md" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/parts/H1LicenseTexts.mdpart" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/parts/H1Licenses.mdpart" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/FileEditor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/FileEditor.odt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/index-all.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/overview-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/overview-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/package-list" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/resources/background.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/resources/tab.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/resources/titlebar.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/resources/titlebar_end.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/Occurence.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/Position.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/Selection.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/TextBuffer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/TextFileBuffer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/TextFileEditor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/class-use/Occurence.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/class-use/Position.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/class-use/Selection.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/class-use/TextBuffer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/class-use/TextFileBuffer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/class-use/TextFileEditor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/internal/BufferWrapper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/internal/Line.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/internal/TextPos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/internal/class-use/BufferWrapper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/internal/class-use/Line.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/internal/class-use/TextPos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/internal/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/internal/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/internal/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/internal/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/se/natusoft/tools/fileeditor/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/apidocs/stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/images/FileEditor-eroded-brown.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/FileEditor.pdf" afterPath="$PROJECT_DIR$/docs/FileEditor.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Apache-2.0.md" afterPath="$PROJECT_DIR$/docs/Apache-2.0.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/FileEditor.md" afterPath="$PROJECT_DIR$/docs/FileEditor.md" />
@@ -639,7 +593,11 @@
       <created>1350828425193</created>
       <updated>1350828425193</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Deleted javadoc checkin (how that got in there in the first place escapes me!)&#10;- Deleted other doc format files that are no longer needed.">
+      <created>1354121130598</created>
+      <updated>1354121130599</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -711,7 +669,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated pom.xml with correct version of CodeLicenceManager." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Deleted javadoc checkin (how that got in there in the first place escapes me!)&#10;- Deleted other doc format files that are no longer needed." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -726,6 +684,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Added Idea files." />
     <MESSAGE value="Updated pom.xml with correct version of CodeLicenceManager." />
+    <MESSAGE value="- Deleted javadoc checkin (how that got in there in the first place escapes me!)&#10;- Deleted other doc format files that are no longer needed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

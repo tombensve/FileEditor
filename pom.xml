@@ -18,7 +18,7 @@
         most of the features you expect from an editor including selections.
     </description>
     <properties>
-        <copyrightYear>2009</copyrightYear>
+        <copyrightYear>2012</copyrightYear>
         <copyrightHolder>Natusoft AB</copyrightHolder>
         <copyrightHolderWeb>http://www.natusoft.se/</copyrightHolderWeb>
     </properties>
@@ -39,15 +39,6 @@
             <email>tommy@natusoft.se</email>
         </developer>
     </developers>
-    <scm>
-        <connection>scm:http://fileeditor.hg.sourceforge.net:8000/hgroot/fileeditor/fileeditor</connection>
-        <developerConnection>scm:ssh://user@fileeditor.hg.sourceforge.net/hgroot/fileeditor/fileeditor</developerConnection>
-        <url>http://fileeditor.hg.sourceforge.net/hgweb/fileeditor/</url>
-    </scm>
-    <issueManagement>
-        <system>sourceforge</system>
-        <url>http://sourceforge.net/projects/fileeditor/support</url>
-    </issueManagement>
 
     <!--
         Dependencies
@@ -82,30 +73,6 @@
                     <source>1.5</source>
                     <target>1.5</target>
                 </configuration>
-            </plugin>
-
-            <!--
-                Provide Javadoc skin. Other javadoc config under <reporting/>.
-            -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.6.1</version>
-                <dependencies>
-                </dependencies>
-
-                <executions>
-                    <execution>
-                        <id>jar-javadoc</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <phase>deploy</phase>
-                        <configuration>
-                            <attach>true</attach>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
 
             <!--
@@ -162,28 +129,70 @@
 
                             <installOptions>
                                 <verbose>true</verbose>
-                                <licenseDir>${basedir}/target/license</licenseDir>
-                                <thirdpartyLicenseDir>${basedir}/target/license/thirdparty</thirdpartyLicenseDir>
+                                <licenseDir>target/license</licenseDir>
+                                <thirdpartyLicenseDir>target/license/thirdparty</thirdpartyLicenseDir>
                             </installOptions>
 
-                            <createMavenPDFPluginLicenseAPTVersions>true</createMavenPDFPluginLicenseAPTVersions>
+                            <createLicensesMarkdown>true</createLicensesMarkdown>
+                            <markdownTargetSubdir>docs</markdownTargetSubdir>
+                            <markdownLinkPrefix>https://github.com/tombensve/FileEditor/blob/master/docs</markdownLinkPrefix>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                <artifactId>markdowndoc-maven-plugin</artifactId>
+                <version>1.0</version>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                        <artifactId>markdown-doc-lib</artifactId>
+                        <version>1.0</version>
+                    </dependency>
+                </dependencies>
+
+                <executions>
+                    <execution>
+                        <id>generate-pdf-docs</id>
+                        <goals>
+                            <goal>doc</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+
+                            <generatorOptions>
+                                <generator>pdf</generator>
+                                <inputPaths>
+                                    docs/FileEditor.md,
+                                    Docs/parts/H1Licenses.mdpart,
+                                    Docs/licenses.md,
+                                    Docs/parts/H1LicenseTexts.mdpart,
+                                    Docs/.*-.*.md
+                                </inputPaths>
+                            </generatorOptions>
+
+                            <pdfGeneratorOptions>
+                                <resultFile>docs/FileEditor.pdf</resultFile>
+                                <pageSize>A4</pageSize>
+                                <title>File Editor</title>
+                                <subject>User Guide</subject>
+                                <version>2.0</version>
+                                <author>Tommy Svensson</author>
+                                <copyright>Copyright © 2012 Natusoft AB</copyright>
+                                <generateTitlePage>true</generateTitlePage>
+                                <generateTOC>true</generateTOC>
+                            </pdfGeneratorOptions>
+
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
-
-    <!--
-        Distribution Management
-    -->
-    <distributionManagement>
-        <repository>
-            <id>deploy-maven-natusoft-se</id>
-            <name>maven.natusoft.se</name>
-            <url>file:/LVolumes/Development/repository/maven/maven.natusoft.se</url>
-        </repository>
-    </distributionManagement>
 
     <repositories>
         <repository>
@@ -215,13 +224,6 @@
                     <excludePackageNames>se.natusoft.tools.fileeditor.internal*</excludePackageNames>
                 </configuration>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-                <!--version>2.4.2</version-->
-            </plugin>
-
         </plugins>
     </reporting>
 
@@ -300,6 +302,58 @@
                         </executions>
 
                     </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>html-docs</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                        <artifactId>markdowndoc-maven-plugin</artifactId>
+                        <version>1.0</version>
+
+                        <dependencies>
+                            <dependency>
+                                <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                                <artifactId>markdown-doc-lib</artifactId>
+                                <version>1.0</version>
+                            </dependency>
+                        </dependencies>
+
+                        <executions>
+                            <execution>
+                                <id>generate-html-docs</id>
+                                <goals>
+                                    <goal>doc</goal>
+                                </goals>
+                                <phase>install</phase>
+                                <configuration>
+
+                                    <generatorOptions>
+                                        <generator>html</generator>
+                                        <inputPaths>
+                                            docs/FileEditor.md,
+                                            docs/parts/H1Licenses.mdpart,
+                                            docs/licenses.md,
+                                            docs/parts/H1LicenseTexts.mdpart,
+                                            docs/.*-.*.md
+                                        </inputPaths>
+                                    </generatorOptions>
+
+                                    <htmlGeneratorOptions>
+                                        <resultFile>docs/FileEditor.html</resultFile>
+                                        <inlineCSS>false</inlineCSS>
+                                        <css>doc.css</css>
+                                    </htmlGeneratorOptions>
+
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
                 </plugins>
             </build>
         </profile>

@@ -55,16 +55,6 @@
     </fileSet>
 
     <fileSet>
-      <directory>target/site</directory>
-      <outputDirectory>docs</outputDirectory>
-      <includes>
-        <include>**/*</include>
-      </includes>
-      <excludes>
-      </excludes>
-    </fileSet>
-
-    <fileSet>
       <directory>target/license</directory>
       <outputDirectory>license</outputDirectory>
       <includes>
