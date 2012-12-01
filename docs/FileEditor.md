@@ -1,6 +1,6 @@
 # FileEditor 2.0
 
-##Introduction
+## Introduction
 
 FileEditor provides a programmable only text file editor. No gui is
 available. It supplies most of the features you expect from an editor
@@ -11,17 +11,7 @@ a couple of years ago was made to script a set of special refactorings
 using BeanShell. It has now been updated and more heavily tested,
 and released as open source in hope it can be useful for others.
 
-----
-
-  **Please Note:**
-  A previous version of this utility exists on <http://fileeditor.sf.net/>.
-  As of version 2.0 this has moved to github and also changed package from
-  _se.biltmore..._ to _se.natusoft..._ The package change was required due to a
-  bad decision by me to use the package name of a company I was part owner
-  of, but in the end didn't work out as intended and I left. Thereby I 
-  have changed package to my own company name. 
-
-##Maven Usage
+## Maven Usage
 
 If you are using maven, add the following to your pom:
 
@@ -143,3 +133,22 @@ FileEditor to update source code:
 
 
 There is not much more to say about this. 
+
+
+# Special note to users of version < 2.0.
+
+A previous version of this utility exists on <http://fileditor.sf.net/>.
+As of version 2.0 this has moved to github and also changed package from _se.biltmore..._
+to _se.natusoft..._ The package change was required due to a bad decision by me to use the
+package name of a company my company was part owner of, but in the end didn't work out as
+intended and I left. Thereby I have changed package to my own company name.
+
+If you used the previous version then a search and replace of
+
+    <groupId>se.biltmore.tools.fileeditor</groupId>
+
+to
+
+    <groupId>se.natusoft.tools.fileeditor</groupId>
+
+in your pom(s) should be enough.
