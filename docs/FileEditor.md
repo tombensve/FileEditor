@@ -143,12 +143,6 @@ to _se.natusoft..._ The package change was required due to a bad decision by me 
 package name of a company my company was part owner of, but in the end didn't work out as
 intended and I left. Thereby I have changed package to my own company name.
 
-If you used the previous version then a search and replace of
-
-    <groupId>se.biltmore.tools.fileeditor</groupId>
-
-to
-
-    <groupId>se.natusoft.tools.fileeditor</groupId>
-
-in your pom(s) should be enough.
+If you used the previous version then a search and replace of _biltmore_ to _natusoft_
+in your poms and imports should be enough. Nothing else have change between previous
+version and 2.0.
