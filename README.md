@@ -17,3 +17,5 @@ _A tool for programatically editing text files._
 ----
 
 [PDF Version](https://github.com/tombensve/FileEditor/blob/master/docs/FileEditor.pdf)
+
+[Javadoc](http://apidoc.natusoft.se/FileEditor/)
