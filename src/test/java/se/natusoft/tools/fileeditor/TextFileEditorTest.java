@@ -103,6 +103,22 @@ public class TextFileEditorTest extends TestCase {
         return buffer;
     }
 
+    private TextBuffer getXMLTestBuffer() {
+        TextBuffer buffer = new TextFileBuffer();
+        buffer.addLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+        buffer.addLine("<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd\">");
+        buffer.addLine("<modelVersion>4.0.0</modelVersion>");
+        buffer.addLine("");
+        buffer.addLine("<groupId>se.natusoft.tools.fileeditor</groupId>");
+        buffer.addLine("<artifactId>FileEditor</artifactId>");
+        buffer.addLine("<packaging>jar</packaging>");
+        buffer.addLine("<version>2.0</version>");
+        buffer.addLine("<name>FileEditor</name>");
+        buffer.addLine("");
+        buffer.addLine("<url>https://github.com/tombensve/FileEditor</url>");
+        return buffer;
+    }
+
     /**
      * Test of getSubString method, of class TextFileEditor.
      */
@@ -753,4 +769,13 @@ public class TextFileEditorTest extends TestCase {
         assertTrue(editor.getLine().equals("One  Three Four Five Six Seven Eight Nine Ten"));
     }
 
+    public void testXMLReplaceBetween() {
+        TextFileEditor editor = new TextFileEditor();
+        editor.setTextBuffer(getXMLTestBuffer());
+        assertTrue(editor.find("project"));
+        assertTrue(editor.findFromCurrent("version"));
+        editor.replaceCurrentLineBetween("<version>", "</version>", "5.8.2-SNAPSHOT");
+        editor.moveToTopOfFile();
+        assertTrue(editor.find("<version>5.8.2-SNAPSHOT</version>"));
+    }
 }
