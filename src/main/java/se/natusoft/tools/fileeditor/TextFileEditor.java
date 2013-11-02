@@ -3,7 +3,6 @@ package se.natusoft.tools.fileeditor;
 import se.natusoft.tools.codelicmgr.annotations.*;
 import se.natusoft.tools.codelicmgr.enums.Source;
 import se.natusoft.tools.fileeditor.internal.BufferWrapper;
-import se.natusoft.tools.fileeditor.internal.Line;
 import se.natusoft.tools.fileeditor.internal.TextPos;
 
 import java.io.File;
@@ -226,7 +225,7 @@ public class TextFileEditor {
     /**
      * Returns the current line.
      */
-    private Line getLineAsLine() {
+    public Line getLineAsLine() {
         return this.buffer.getLine(this.position.getLine());
     }
 
@@ -597,6 +596,15 @@ public class TextFileEditor {
     }
 
     /**
+     * Finds the specified text starting search at current line and moves the current position.
+     *
+     * @param text The text to find. This can be a regular expression.
+     */
+    public boolean findFromCurrent(String text) {
+        return findFromCurrent(text, null);
+    }
+
+    /**
      * Finds the specified text and moves the current position. This always start searching from the
      * beginning of the buffer!
      *
@@ -604,9 +612,30 @@ public class TextFileEditor {
      * @param endAt A regexp to cause premature end of search.
      */
     public boolean find(String text, String endAt) {
+        return find(text, TextPos.FIRST, endAt);
+    }
+
+    /**
+     * Finds the specified text starting search at current line and moves the current position.
+     *
+     * @param text The text to find. This can be a regular expression.
+     * @param endAt A regexp to cause premature end of search.
+     */
+    public boolean findFromCurrent(String text, String endAt) {
+        return find(text, this.position.getLineNumber(), endAt);
+    }
+
+    /**
+     * Finds the specified text and moves the current position. This always start searching from the
+     * beginning of the buffer!
+     *
+     * @param text The text to find. This can be a regular expression.
+     * @param endAt A regexp to cause premature end of search.
+     */
+    private boolean find(String text, TextPos startAtLine, String endAt) {
         boolean result = false;
         int lastLine = this.buffer.getLastLine();
-        TextPos lineNo = TextPos.FIRST;
+        TextPos lineNo = startAtLine;
         for (; lineNo.lessThanOrEqual(lastLine); lineNo = lineNo.increment()) {
             Line line = this.buffer.getLine(lineNo);
             TextPos ix = line.find(text, TextPos.FIRST, endAt);
@@ -938,6 +967,35 @@ public class TextFileEditor {
      */
     public void replaceCurrentLine(String text) {
         this.buffer.setLine(this.position.getLineNumber(), text);
+    }
+
+    /**
+     * Replaces the string between "before" and "after" in the current line.
+     * <p/>
+     * This is useful for updating contents of XML tags or any other before & after tags.
+     *
+     * @param before What should come before.
+     * @param after What should be after.
+     * @param newBetween The new value in between.
+     */
+    public void replaceCurrentLineBetween(String before, String after, String newBetween) {
+        Line line = getLineAsLine();
+        line.replaceBetween(before, after, newBetween);
+        replaceCurrentLine(line.toString());
+    }
+
+    /**
+     * Returns the text between "before" and "after" in the current line.
+     * <p/>
+     * This is useful to get the contents of XML tags or any other before & after tags.
+     *
+     * @param before The text that comes before the text to get.
+     * @param after The text that comes after the text to get.
+     *
+     * @return The text between.
+     */
+    public String getCurrentLineBetween(String before, String after) {
+        return getLineAsLine().getBetween(before, after);
     }
 
     /**

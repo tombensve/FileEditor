@@ -2,6 +2,7 @@ package se.natusoft.tools.fileeditor.internal;
 
 import se.natusoft.tools.codelicmgr.annotations.*;
 import se.natusoft.tools.codelicmgr.enums.Source;
+import se.natusoft.tools.fileeditor.Line;
 import se.natusoft.tools.fileeditor.Position;
 import se.natusoft.tools.fileeditor.TextBuffer;
 

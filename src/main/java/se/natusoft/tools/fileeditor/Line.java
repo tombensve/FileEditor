@@ -1,7 +1,8 @@
-package se.natusoft.tools.fileeditor.internal;
+package se.natusoft.tools.fileeditor;
 
 import se.natusoft.tools.codelicmgr.annotations.*;
 import se.natusoft.tools.codelicmgr.enums.Source;
+import se.natusoft.tools.fileeditor.internal.TextPos;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -300,6 +301,50 @@ public class Line {
         }
 
         return replaced;
+    }
+
+    /**
+     * Replaces the text between "before" and "after" with "newBetween".
+     *
+     * @param before The text that comes before what should be replaced.
+     * @param after The text that comes after what should be replaced.
+     * @param newBetween The new inbetween text.
+     *
+     * @return true if anything was replaced, false otherwise.
+     */
+    public boolean replaceBetween(String  before, String after, String newBetween) {
+        int bix = this.line.indexOf(before);
+        if (bix >= 0) {
+            int aix = this.line.indexOf(after, bix + before.length());
+            if (aix >= 0) {
+                String newLine = this.line.substring(0, bix + before.length()) + newBetween + this.line.substring(aix);
+                this.line = new StringBuilder(newLine);
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Returns the text between the "before" and "after".
+     *
+     * @param before The text that comes before what should be gotten.
+     * @param after The text that comes after what should be gotten.
+     *
+     * @return The between text.
+     */
+    public String getBetween(String before, String after) {
+        String between = "";
+        int bix = this.line.indexOf(before);
+        if (bix >= 0) {
+            int aix = this.line.indexOf(after, bix + before.length());
+            if (aix >= 0) {
+                between = this.line.substring(bix + before.length(), aix);
+            }
+        }
+
+        return between;
     }
 
     /**
