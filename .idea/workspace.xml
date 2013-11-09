@@ -7,14 +7,14 @@
     </list>
     <ignored path="FileEditor.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384006663522" ignored="false" />
+    <file path="/Dummy.txt" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009979311" ignored="false" />
     <file path="/README.md" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1355656194085" ignored="false" />
     <file path="$USER_HOME$/.m2/settings.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898757394" ignored="false" />
     <file path="/settings.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898415523" ignored="false" />
     <file path="$PROJECT_DIR$/../XOB/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898869291" ignored="false" />
-    <file path="/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007842425" ignored="false" />
+    <file path="/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011122385" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/java/se/natusoft/maven/plugin/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382291213124" ignored="false" />
-    <file path="/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007080372" ignored="false" />
+    <file path="/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384010767267" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382290745216" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/.idea/compiler.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382197708693" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/.idea/workspace.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382455226678" ignored="false" />
@@ -28,7 +28,7 @@
     <file path="/TextFileEditor.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382293355752" ignored="false" />
     <file path="/Line.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382293158785" ignored="false" />
     <file path="/TextFileEditorTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382292458112" ignored="false" />
-    <file path="/fragment.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383588086489" ignored="false" />
+    <file path="/fragment.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384010037353" ignored="false" />
     <file path="$PROJECT_DIR$/target/surefire-reports/TEST-se.natusoft.tools.fileeditor.TextFileEditorTest.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382207909657" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/java/se/natusoft/maven/plugin/Scripts.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382291213124" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/java/se/natusoft/maven/plugin/Script.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382291213124" ignored="false" />
@@ -55,7 +55,7 @@
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenPluginScripts/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383581324083" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenPlugin/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383580599122" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/src/test/java/se/natusoft/maven/plugin/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007771372" ignored="false" />
-    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007629051" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384010500582" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/src/test/resources/test/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383585508572" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007771372" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/Variable.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007771372" ignored="false" />
@@ -63,14 +63,26 @@
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/.idea/vcs.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383588104848" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/.idea/workspace.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383852911168" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/src/main/resources/fescripts/pom_change_version.bsh" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383588787946" ignored="false" />
-    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384006613858" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384010752852" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/SourcePath.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007771372" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/Variables.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007771372" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/Script.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007771372" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/Scripts.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007771372" ignored="false" />
-    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/Docs/FileEditorMavenSupport-UserGuide.html" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384002692229" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/Docs/FileEditorMavenSupport-UserGuide.html" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384008957338" ignored="false" />
     <file path="/Script.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007037745" ignored="false" />
     <file path="/Variables.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384007746882" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/src/test/java/se/natusoft/tools/fileeditor/plugin/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384008957338" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/tools/fileeditor/plugin/SourcePath.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009303005" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/tools/fileeditor/plugin/Variable.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009303005" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/tools/fileeditor/plugin/Variables.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009303005" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/tools/fileeditor/plugin/Script.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009303006" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/tools/fileeditor/plugin/Scripts.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009303006" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/tools/fileeditor/plugin/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011016078" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/se/natusoft/tools/fileeditor/file-editor-maven-support-plugin/1.0/file-editor-maven-support-plugin-1.0.jar!/META-INF/maven/plugin.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009239739" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/test/java/se/natusoft/tools/fileeditor/plugin/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009442387" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/test/java/se/natusoft/tools/fileeditor/plugin/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011060841" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/src/main/java/se/natusoft/tools/fileeditor/scripts/ScriptResource.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384010686190" ignored="false" />
+    <file path="/ScriptResource.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384010672564" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +168,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="413" column="64" selection-start="17271" selection-end="17271" vertical-scroll-proportion="0.7081712">
+            <state line="415" column="63" selection-start="17404" selection-end="17404" vertical-scroll-proportion="0.7996109">
               <folding />
             </state>
           </provider>
@@ -780,7 +792,11 @@
       <created>1384006667092</created>
       <updated>1384006667092</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Updated pom.xml with profile that adapts it to sonatype requirements for release to maven central.">
+      <created>1384007872881</created>
+      <updated>1384007872881</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -990,7 +1006,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="413" column="64" selection-start="17271" selection-end="17271" vertical-scroll-proportion="0.7081712">
+        <state line="415" column="63" selection-start="17404" selection-end="17404" vertical-scroll-proportion="0.7996109">
           <folding />
         </state>
       </provider>

@@ -389,11 +389,12 @@
                                     <goal>edit</goal>
                                 </goals>
                                 <phase>generate-sources</phase>
+                                <inherited>true</inherited>
                                 <configuration>
                                     <scripts>
                                         <script>
                                             <forArtifactId>FileEditor</forArtifactId>
-                                            <scriptFile>resource:fescripts/pom_add_parent.bsh</scriptFile>
+                                            <scriptFile>script:pom_add_parent.bsh</scriptFile>
                                             <sourcePath>${basedir}/pom.xml</sourcePath>
                                             <variables>
                                                 <variable>
@@ -412,7 +413,7 @@
                                         </script>
                                         <script>
                                             <forArtifactId>FileEdtior</forArtifactId>
-                                            <scriptFile>resource:fescripts/pom_add_snapshot_to_version.bsh</scriptFile>
+                                            <scriptFile>script:pom_add_snapshot_to_version.bsh</scriptFile>
                                             <sourcePath>${basedir}/pom.xml</sourcePath>
                                         </script>
                                     </scripts>
