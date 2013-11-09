@@ -412,7 +412,7 @@
                                             </variables>
                                         </script>
                                         <script>
-                                            <forArtifactId>FileEdtior</forArtifactId>
+                                            <forArtifactId>FileEditor</forArtifactId>
                                             <scriptFile>script:pom_add_snapshot_to_version.bsh</scriptFile>
                                             <sourcePath>${basedir}/pom.xml</sourcePath>
                                         </script>
