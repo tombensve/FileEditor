@@ -40,6 +40,12 @@
         </developer>
     </developers>
 
+    <scm>
+        <connection>scm:git:git@github.com:tombensve/FileEditor.git</connection>
+        <developerConnection>scm:git:git@github.com:tombensve/FileEditor.git</developerConnection>
+        <url>https://github.com/tombensve/FileEditor</url>
+    </scm>
+
     <!--
         Dependencies
     -->

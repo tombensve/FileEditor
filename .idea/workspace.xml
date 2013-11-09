@@ -7,12 +7,11 @@
     </list>
     <ignored path="FileEditor.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011131487" ignored="false" />
+    <file path="/Dummy.txt" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011607428" ignored="false" />
     <file path="/README.md" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1355656194085" ignored="false" />
-    <file path="$USER_HOME$/.m2/settings.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898757394" ignored="false" />
     <file path="/settings.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898415523" ignored="false" />
     <file path="$PROJECT_DIR$/../XOB/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898869291" ignored="false" />
-    <file path="/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011600256" ignored="false" />
+    <file path="/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384014656925" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/java/se/natusoft/maven/plugin/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382291213124" ignored="false" />
     <file path="/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011520578" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382290745216" ignored="false" />
@@ -78,7 +77,7 @@
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/tools/fileeditor/plugin/Script.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009303006" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/tools/fileeditor/plugin/Scripts.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009303006" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/tools/fileeditor/plugin/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011524804" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/se/natusoft/tools/fileeditor/file-editor-maven-support-plugin/1.0/file-editor-maven-support-plugin-1.0.jar!/META-INF/maven/plugin.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009239739" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/se/natusoft/tools/fileeditor/file-editor-maven-support-plugin/1.0/file-editor-maven-support-plugin-1.0.jar!/META-INF/maven/plugin.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384012740486" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/test/java/se/natusoft/tools/fileeditor/plugin/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384009442387" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/test/java/se/natusoft/tools/fileeditor/plugin/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011060841" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/src/main/java/se/natusoft/tools/fileeditor/scripts/ScriptResource.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384010686190" ignored="false" />
@@ -165,10 +164,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="414" column="69" selection-start="17324" selection-end="17324" vertical-scroll-proportion="0.7081712">
+            <state line="14" column="7" selection-start="562" selection-end="562" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$USER_HOME$/.m2/settings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.24630542">
               <folding />
             </state>
           </provider>
@@ -800,7 +808,11 @@
       <created>1384011134382</created>
       <updated>1384011134382</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Updated pom.xml with profile that adapts it to sonatype requirements for release to maven central.">
+      <created>1384011610015</created>
+      <updated>1384011610015</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -917,13 +929,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/internal/BufferWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="13" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/FileEditor.pdf" />
     <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/Occurence.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1010,7 +1015,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="414" column="69" selection-start="17324" selection-end="17324" vertical-scroll-proportion="0.7081712">
+        <state line="14" column="7" selection-start="562" selection-end="562" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.24630542">
           <folding />
         </state>
       </provider>
