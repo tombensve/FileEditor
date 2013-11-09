@@ -372,7 +372,7 @@
                 <plugins>
                     <plugin>
                         <groupId>se.natusoft.tools.fileeditor</groupId>
-                        <artifactId>file-editor-maven-support</artifactId>
+                        <artifactId>file-editor-maven-support-plugin</artifactId>
                         <version>1.0</version>
 
                         <executions>
