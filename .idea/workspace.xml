@@ -2,24 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc4749b-e1aa-413c-a286-b92b43076bc3" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/internal/Line.java" afterPath="$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/Line.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/FileEditor.pdf" afterPath="$PROJECT_DIR$/docs/FileEditor.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/internal/BufferWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/internal/BufferWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/TextFileEditor.java" afterPath="$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/TextFileEditor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FileEditor.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383404348266" ignored="false" />
+    <file path="/Dummy.txt" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383855886417" ignored="false" />
     <file path="/README.md" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1355656194085" ignored="false" />
     <file path="$USER_HOME$/.m2/settings.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898757394" ignored="false" />
     <file path="/settings.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898415523" ignored="false" />
     <file path="$PROJECT_DIR$/../XOB/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898869291" ignored="false" />
-    <file path="/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383152968627" ignored="false" />
+    <file path="/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384004111664" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/java/se/natusoft/maven/plugin/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382291213124" ignored="false" />
-    <file path="/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382291176568" ignored="false" />
+    <file path="/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384003845589" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382290745216" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/.idea/compiler.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382197708693" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/.idea/workspace.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382455226678" ignored="false" />
@@ -33,14 +29,14 @@
     <file path="/TextFileEditor.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382293355752" ignored="false" />
     <file path="/Line.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382293158785" ignored="false" />
     <file path="/TextFileEditorTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382292458112" ignored="false" />
-    <file path="/fragment.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382288624654" ignored="false" />
+    <file path="/fragment.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383588086489" ignored="false" />
     <file path="$PROJECT_DIR$/target/surefire-reports/TEST-se.natusoft.tools.fileeditor.TextFileEditorTest.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382207909657" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/java/se/natusoft/maven/plugin/Scripts.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382291213124" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/java/se/natusoft/maven/plugin/Script.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382291213124" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/test/resources/scripts/modify_version/bsh.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382283950276" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/test/resources/scripts/modify_version.bsh" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382284013102" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/java/se/natusoft/maven/plugin/test/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382293869145" ignored="false" />
-    <file path="/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382289909769" ignored="false" />
+    <file path="/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383591461629" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/resources/test/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382289819851" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/resources/test/scripts/modify_version.bsh" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382289440209" ignored="false" />
     <file path="/modify_version.bsh" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382291597536" ignored="false" />
@@ -56,6 +52,25 @@
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/resources/scripts/add_snapshot_to_version.bsh" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382293740810" ignored="false" />
     <file path="/add_snapshot_to_version.bsh" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382293724419" ignored="false" />
     <file path="/change_pom_version.bsh" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382293582465" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384002675452" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenPluginScripts/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383581324083" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenPlugin/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383580599122" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/src/test/java/se/natusoft/maven/plugin/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384003904227" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383589081041" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/src/test/resources/test/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383585508572" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384003904227" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/Variable.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384003904227" ignored="false" />
+    <file path="/Variable.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383587380241" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/.idea/vcs.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383588104848" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/.idea/workspace.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383852911168" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/src/main/resources/fescripts/pom_change_version.bsh" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383588787946" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1383590248149" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/SourcePath.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384003904227" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/Variables.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384003904227" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/Script.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384003904227" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/main/java/se/natusoft/maven/plugin/Scripts.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384003904227" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditorMavenSupport/Docs/FileEditorMavenSupport-UserGuide.html" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384002692229" ignored="false" />
+    <file path="/Script.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384003672389" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +156,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="367" column="18" selection-start="14705" selection-end="14705" vertical-scroll-proportion="0.868677">
+            <state line="375" column="46" selection-start="15023" selection-end="15023" vertical-scroll-proportion="0.25728154">
               <folding />
             </state>
           </provider>
@@ -159,7 +174,7 @@
       <file leaf-file-name="TextFileEditor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/TextFileEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="990" column="6" selection-start="31755" selection-end="31755" vertical-scroll-proportion="0.0">
+            <state line="980" column="41" selection-start="31346" selection-end="31371" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,7 +219,7 @@
       <file leaf-file-name="BufferWrapper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/internal/BufferWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="13" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.0">
+            <state line="34" column="55" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -249,6 +264,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Tools/apache-maven-3.0.4" />
         <option name="printErrorStackTraces" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -298,8 +314,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="114" />
-    <option name="y" value="146" />
+    <option name="x" value="157" />
+    <option name="y" value="147" />
     <option name="width" value="1920" />
     <option name="height" value="1200" />
   </component>
@@ -339,16 +355,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="FileEditor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -493,6 +499,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -503,7 +519,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="MavenSettings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FileEditorMavenPlugin/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FileEditorMavenSupport" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -752,12 +768,16 @@
       <created>1383404352450</created>
       <updated>1383404352450</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added find from current position.">
+      <created>1383414343054</created>
+      <updated>1383414343054</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="146" width="1920" height="1200" extended-state="0" />
-    <editor active="false" />
+    <frame x="157" y="147" width="1920" height="1200" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -772,14 +792,13 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970837" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994455" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.28703704" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16755603" sideWeight="0.6703704" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17075774" sideWeight="0.6722222" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39990115" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="716" y="82" width="809" height="1210" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.6703704" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.6722222" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="PDF_FIND" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -788,6 +807,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Code Graph" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994455" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -833,7 +853,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added wagon ftp extension." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added find from current position." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -858,6 +878,7 @@
     <MESSAGE value="Copy + Paste errror fix." />
     <MESSAGE value="Added Javadoc link to README.md" />
     <MESSAGE value="Added wagon ftp extension." />
+    <MESSAGE value="Added find from current position." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -899,20 +920,6 @@
         <state line="8" column="0" selection-start="212" selection-end="212" vertical-scroll-proportion="0.101437025" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/parts/H1Licenses.mdpart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/internal/BufferWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="13" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/FileEditor.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="107" column="16" selection-start="3309" selection-end="3309" vertical-scroll-proportion="0.0" />
@@ -930,16 +937,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/Position.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/TextFileEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="0" selection-start="3796" selection-end="3796" vertical-scroll-proportion="0.0">
+        <state line="980" column="41" selection-start="31346" selection-end="31371" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/se/natusoft/tools/fileeditor/TextFileEditorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/Position.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="777" column="0" selection-start="28757" selection-end="28757" vertical-scroll-proportion="0.0">
+        <state line="144" column="0" selection-start="3796" selection-end="3796" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -951,16 +958,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/TextFileEditor.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/se/natusoft/tools/fileeditor/TextFileEditorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="990" column="6" selection-start="31755" selection-end="31755" vertical-scroll-proportion="0.0">
+        <state line="777" column="0" selection-start="28757" selection-end="28757" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/parts/H1Licenses.mdpart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/internal/BufferWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="55" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="367" column="18" selection-start="14705" selection-end="14705" vertical-scroll-proportion="0.868677">
+        <state line="375" column="46" selection-start="15023" selection-end="15023" vertical-scroll-proportion="0.25728154">
           <folding />
         </state>
       </provider>

@@ -5,7 +5,7 @@
     <groupId>se.natusoft.tools.fileeditor</groupId>
     <artifactId>FileEditor</artifactId>
     <packaging>jar</packaging>
-    <version>2.0</version>
+    <version>2.0.1</version>
     <name>FileEditor</name>
 
     <url>https://github.com/tombensve/FileEditor</url>
@@ -363,6 +363,56 @@
                         </executions>
                     </plugin>
 
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>sonaify</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>se.natusoft.tools.fileeditor</groupId>
+                        <artifactId>file-editor-maven-support</artifactId>
+                        <version>1.0</version>
+
+                        <executions>
+                            <execution>
+                                <id>upd-parent-and-snapshot</id>
+                                <goals>
+                                    <goal>edit</goal>
+                                </goals>
+                                <phase>generate-sources</phase>
+                                <configuration>
+                                    <scripts>
+                                        <script>
+                                            <forArtifactId>FileEditor</forArtifactId>
+                                            <scriptFile>resource:fescripts/pom_add_parent.bsh</scriptFile>
+                                            <sourcePath>${basedir}/pom.xml</sourcePath>
+                                            <variables>
+                                                <variable>
+                                                    <name>groupId</name>
+                                                    <value>org.sonatype.oss</value>
+                                                </variable>
+                                                <variable>
+                                                    <name>artifactId</name>
+                                                    <value>oss-parent</value>
+                                                </variable>
+                                                <variable>
+                                                    <name>version</name>
+                                                    <value>7</value>
+                                                </variable>
+                                            </variables>
+                                        </script>
+                                        <script>
+                                            <forArtifactId>FileEdtior</forArtifactId>
+                                            <scriptFile>resource:fescripts/pom_add_snapshot_to_version.bsh</scriptFile>
+                                            <sourcePath>${basedir}/pom.xml</sourcePath>
+                                        </script>
+                                    </scripts>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
                 </plugins>
             </build>
         </profile>
