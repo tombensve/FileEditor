@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cc4749b-e1aa-413c-a286-b92b43076bc3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FileEditor.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384016715919" ignored="false" />
+    <file path="/Dummy.txt" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384022965885" ignored="false" />
     <file path="/README.md" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1355656194085" ignored="false" />
     <file path="/settings.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898415523" ignored="false" />
     <file path="$PROJECT_DIR$/../XOB/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1371898869291" ignored="false" />
-    <file path="/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384016078581" ignored="false" />
+    <file path="/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384019886557" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/java/se/natusoft/maven/plugin/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382291213124" ignored="false" />
     <file path="/FileEditorMavenPlugin.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011520578" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1382290745216" ignored="false" />
@@ -82,8 +82,45 @@
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportPlugin/src/test/java/se/natusoft/tools/fileeditor/plugin/FileEditorMavenPluginTest.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384011060841" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenSupport/FileEditorMavenSupportScripts/src/main/java/se/natusoft/tools/fileeditor/scripts/ScriptResource.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384010686190" ignored="false" />
     <file path="/ScriptResource.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384010672564" ignored="false" />
-    <file path="$PROJECT_DIR$/../OptionsManager/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384016776283" ignored="false" />
-    <file path="$PROJECT_DIR$/../OptionsManager/.idea/workspace.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384016827177" ignored="false" />
+    <file path="$PROJECT_DIR$/../OptionsManager/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384022915045" ignored="false" />
+    <file path="$PROJECT_DIR$/../OptionsManager/.idea/workspace.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384023052718" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-manager/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-dist/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384021197354" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/.idea/workspace.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384022863690" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-manager/CodeLicenseManager-manager.iml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384017898628" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache-2.properties" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384017894964" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-command-line/CodeLicenseManager-command-line.iml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ApacheSoftwareLicense-2.0.properties" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384017894964" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-maven-plugin/CodeLicenseManager-maven-plugin.iml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-dist/CodeLicenseManager-dist.iml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384017898628" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/SourcePath.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384017894964" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-ant-task/CodeLicenseManager-ant-task.iml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$MAVEN_REPOSITORY$/se/natusoft/tools/codelicmgr/CodeLicenseManager-maven-plugin/2.1.1/CodeLicenseManager-maven-plugin-2.1.1.jar!/META-INF/maven/plugin.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020151060" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/APACHESOFTWARELICENSE-2.0.properties" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-source-updater-java-annotation/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-source-updater-jsp/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-annotations-retention-source/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-source-updater-hash-comment/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-command-line/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-maven-plugin/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-annotations-retention-runtime-all/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-source-updater-slashstar-comment/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-annotations-retention-runtime/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367862" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-licenses-common-opensource/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-documentation/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-source-updater-groovy-annotation/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-source-updater-html-xml/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-ant-task/pom.xml" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367862" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerApplyMojo.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367862" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerScriptMojo.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367862" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/PomExtractor.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367862" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/APTUtils.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367862" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/MojoUtils.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/BuildDataCollector.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerDeleteMojo.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerInstallMojo.java" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
+    <file path="$PROJECT_DIR$/../CodeLicenseManager/setVersion.sh" changelist="4cc4749b-e1aa-413c-a286-b92b43076bc3" time="1384020367863" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +206,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="25" selection-start="851" selection-end="851" vertical-scroll-proportion="0.32101166">
+            <state line="9" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.14591439">
               <folding />
             </state>
           </provider>
@@ -242,7 +279,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/internal/BufferWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="34" column="55" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -279,8 +318,8 @@
         <option value="$PROJECT_DIR$/src/test/java/se/natusoft/tools/fileeditor/TextFileEditorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/Line.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/TextFileEditor.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$USER_HOME$/.m2/settings.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -542,7 +581,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="MavenSettings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FileEditorMavenSupport" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -819,12 +858,20 @@
       <created>1384014785584</created>
       <updated>1384014785584</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added comment to readme about version 2.0.1.">
+      <created>1384017046386</created>
+      <updated>1384017046386</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fixed spelling typo.">
+      <created>1384017162137</created>
+      <updated>1384017162137</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="157" y="147" width="1920" height="1200" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -846,7 +893,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17075774" sideWeight="0.6722222" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39990115" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="716" y="82" width="809" height="1210" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.6722222" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.6722222" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="PDF_FIND" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -900,7 +947,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated pom.xml with profile that adapts it to sonatype requirements for release to maven central." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed spelling typo." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -927,6 +974,8 @@
     <MESSAGE value="Added wagon ftp extension." />
     <MESSAGE value="Added find from current position." />
     <MESSAGE value="Updated pom.xml with profile that adapts it to sonatype requirements for release to maven central." />
+    <MESSAGE value="Added comment to readme about version 2.0.1." />
+    <MESSAGE value="Fixed spelling typo." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1016,7 +1065,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/se/natusoft/tools/fileeditor/internal/BufferWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="55" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1029,7 +1080,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="25" selection-start="851" selection-end="851" vertical-scroll-proportion="0.32101166">
+        <state line="9" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.14591439">
           <folding />
         </state>
       </provider>
