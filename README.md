@@ -22,4 +22,4 @@ _A tool for programatically editing text files._
 
 ----
 
-**Note:** Updated pom to support release to maven central. Nothing else is chagned. I unfortunately made the bad decicion to update the version number from 2.0 to 2.0.1. There is no functionality diff between these versions. 
+**Note:** Updated pom to support release to maven central. Nothing else is changed. I unfortunately made the bad decicion to update the version number from 2.0 to 2.0.1. There is no functionality diff between these versions. 
