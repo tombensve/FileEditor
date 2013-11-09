@@ -375,6 +375,13 @@
                         <artifactId>file-editor-maven-support-plugin</artifactId>
                         <version>1.0</version>
 
+                        <dependencies>
+                            <dependency>
+                                <groupId>se.natusoft.tools.fileeditor</groupId>
+                                <artifactId>file-editor-maven-support-scripts</artifactId>
+                                <version>1.0</version>
+                            </dependency>
+                        </dependencies>
                         <executions>
                             <execution>
                                 <id>upd-parent-and-snapshot</id>
