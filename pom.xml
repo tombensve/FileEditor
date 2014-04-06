@@ -5,7 +5,7 @@
     <groupId>se.natusoft.tools.fileeditor</groupId>
     <artifactId>FileEditor</artifactId>
     <packaging>jar</packaging>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
     <name>FileEditor</name>
 
     <url>https://github.com/tombensve/FileEditor</url>
@@ -53,7 +53,7 @@
         <dependency>
             <groupId>se.natusoft.tools.codelicmgr</groupId>
             <artifactId>CodeLicenseManager-annotations-retention-source</artifactId>
-            <version>2.0</version>
+            <version>2.1.2</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -85,8 +85,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.0.2</version>
                 <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
 
@@ -123,13 +123,13 @@
             <plugin>
                 <groupId>se.natusoft.tools.codelicmgr</groupId>
                 <artifactId>CodeLicenseManager-maven-plugin</artifactId>
-                <version>2.0</version>
+                <version>2.1.2</version>
 
                 <dependencies>
                     <dependency>
                         <groupId>se.natusoft.tools.codelicmgr</groupId>
                         <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
-                        <version>2.0</version>
+                        <version>2.1.2</version>
                     </dependency>
                 </dependencies>
 
@@ -159,13 +159,13 @@
             <plugin>
                 <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                 <artifactId>markdowndoc-maven-plugin</artifactId>
-                <version>1.0</version>
+                <version>1.3.2</version>
 
                 <dependencies>
                     <dependency>
                         <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                         <artifactId>markdown-doc-lib</artifactId>
-                        <version>1.0</version>
+                        <version>1.3.2</version>
                     </dependency>
                 </dependencies>
 
@@ -205,25 +205,8 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>maven-natusoft-se</id>
-            <name>Natusoft maven repository</name>
-            <url>http://maven.natusoft.se/</url>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>plugin-maven-natusoft-se</id>
-            <name>Natusoft maven repository.</name>
-            <url>http://maven.natusoft.se/</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <!--
         Site / Reporting
@@ -254,23 +237,23 @@
 
                         <groupId>se.natusoft.tools.codelicmgr</groupId>
                         <artifactId>CodeLicenseManager-maven-plugin</artifactId>
-                        <version>2.0</version>
+                        <version>2.1.2</version>
 
                         <dependencies>
                             <dependency>
                                 <groupId>se.natusoft.tools.codelicmgr</groupId>
                                 <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
-                                <version>2.0</version>
+                                <version>2.1.2</version>
                             </dependency>
                             <dependency>
                                 <groupId>se.natusoft.tools.codelicmgr</groupId>
                                 <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
-                                <version>2.0</version>
+                                <version>2.1.2</version>
                             </dependency>
                             <dependency>
                                 <groupId>se.natusoft.tools.codelicmgr</groupId>
                                 <artifactId>CodeLicenseManager-source-updater-html-xml</artifactId>
-                                <version>2.0</version>
+                                <version>2.1.2</version>
                             </dependency>
                         </dependencies>
 
@@ -328,13 +311,13 @@
                     <plugin>
                         <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                         <artifactId>markdowndoc-maven-plugin</artifactId>
-                        <version>1.0</version>
+                        <version>1.3.2</version>
 
                         <dependencies>
                             <dependency>
                                 <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                                 <artifactId>markdown-doc-lib</artifactId>
-                                <version>1.0</version>
+                                <version>1.3.2</version>
                             </dependency>
                         </dependencies>
 
@@ -369,64 +352,6 @@
                         </executions>
                     </plugin>
 
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>sonaify</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>se.natusoft.tools.fileeditor</groupId>
-                        <artifactId>file-editor-maven-support-plugin</artifactId>
-                        <version>1.0</version>
-
-                        <dependencies>
-                            <dependency>
-                                <groupId>se.natusoft.tools.fileeditor</groupId>
-                                <artifactId>file-editor-maven-support-scripts</artifactId>
-                                <version>1.0</version>
-                            </dependency>
-                        </dependencies>
-                        <executions>
-                            <execution>
-                                <id>upd-parent-and-snapshot</id>
-                                <goals>
-                                    <goal>edit</goal>
-                                </goals>
-                                <phase>generate-sources</phase>
-                                <inherited>true</inherited>
-                                <configuration>
-                                    <scripts>
-                                        <script>
-                                            <forArtifactId>FileEditor</forArtifactId>
-                                            <scriptFile>script:pom_add_parent.bsh</scriptFile>
-                                            <sourcePath>${basedir}/pom.xml</sourcePath>
-                                            <variables>
-                                                <variable>
-                                                    <name>groupId</name>
-                                                    <value>org.sonatype.oss</value>
-                                                </variable>
-                                                <variable>
-                                                    <name>artifactId</name>
-                                                    <value>oss-parent</value>
-                                                </variable>
-                                                <variable>
-                                                    <name>version</name>
-                                                    <value>7</value>
-                                                </variable>
-                                            </variables>
-                                        </script>
-                                        <script>
-                                            <forArtifactId>FileEditor</forArtifactId>
-                                            <scriptFile>script:pom_add_snapshot_to_version.bsh</scriptFile>
-                                            <sourcePath>${basedir}/pom.xml</sourcePath>
-                                        </script>
-                                    </scripts>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
                 </plugins>
             </build>
         </profile>

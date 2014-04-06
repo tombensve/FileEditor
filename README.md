@@ -2,7 +2,10 @@
 
 Copyright © 2012 Natusoft AB
 
-__Version:__ 2.0.1 
+__Version:__ 2.0.2
+
+__Note:__ This version is identical to 2.0.1 with the exception of updated dependency versions. It will now build
+correctly and not pull non existing versions with it.
 
 __Author:__ Tommy Svensson (tommy@natusoft.se)
 
@@ -10,16 +13,12 @@ __Author:__ Tommy Svensson (tommy@natusoft.se)
 
 _A tool for programatically editing text files._
 
-[Usage](https://github.com/tombensve/FileEditor/blob/master/docs/FileEditor.md)
+Usage: [Markdown](https://github.com/tombensve/FileEditor/blob/master/docs/FileEditor.md) / [PDF](https://github.com/tombensve/FileEditor/blob/master/docs/FileEditor.pdf)
+
+[Javadoc](http://apidoc.natusoft.se/FileEditor/)
 
 [Licenses](https://github.com/tombensve/FileEditor/blob/master/docs/licenses.md)
 
 ----
 
-[PDF Version](https://github.com/tombensve/FileEditor/blob/master/docs/FileEditor.pdf)
-
-[Javadoc](http://apidoc.natusoft.se/FileEditor/)
-
-----
-
-**Note:** Updated pom to support release to maven central. Nothing else is changed. I unfortunately made the bad decicion to update the version number from 2.0 to 2.0.1. There is no functionality diff between these versions. 
+[Maven repo setup](https://github.com/tombensve/CommonStuff/blob/master/docs/MavenRepository.md)
