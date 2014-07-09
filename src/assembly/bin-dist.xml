@@ -5,14 +5,14 @@
             FileEditor
         
         Code Version
-            2.0
+            2.0.3
         
         Description
             Provides a programmable only text file editor. No gui is available. It supplies
             most of the features you expect from an editor including selections.
         
     COPYRIGHTS
-        Copyright (C) 2009 by Natusoft AB All rights reserved.
+        Copyright (C) 2012 by Natusoft AB All rights reserved.
         
     LICENSE
         Apache 2.0 (Open Source)

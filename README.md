@@ -2,10 +2,9 @@
 
 Copyright © 2012 Natusoft AB
 
-__Version:__ 2.0.2
+__Version:__ 2.0.3
 
-__Note:__ This version is identical to 2.0.1 with the exception of updated dependency versions. It will now build
-correctly and not pull non existing versions with it.
+__Note:__ This version is identical to 2.0.2 with the exception of updated dependency versions and one dependency have been removed.
 
 __Author:__ Tommy Svensson (tommy@natusoft.se)
 

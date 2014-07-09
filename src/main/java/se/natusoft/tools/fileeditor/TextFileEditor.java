@@ -1,7 +1,42 @@
+/* 
+ * 
+ * PROJECT
+ *     Name
+ *         FileEditor
+ *     
+ *     Code Version
+ *         2.0.3
+ *     
+ *     Description
+ *         Provides a programmable only text file editor. No gui is available. It supplies
+ *         most of the features you expect from an editor including selections.
+ *         
+ * COPYRIGHTS
+ *     Copyright (C) 2012 by Natusoft AB All rights reserved.
+ *     
+ * LICENSE
+ *     Apache 2.0 (Open Source)
+ *     
+ *     Licensed under the Apache License, Version 2.0 (the "License");
+ *     you may not use this file except in compliance with the License.
+ *     You may obtain a copy of the License at
+ *     
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *     
+ *     Unless required by applicable law or agreed to in writing, software
+ *     distributed under the License is distributed on an "AS IS" BASIS,
+ *     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *     See the License for the specific language governing permissions and
+ *     limitations under the License.
+ *     
+ * AUTHORS
+ *     tommy ()
+ *         Changes:
+ *         2014-07-09: Created!
+ *         
+ */
 package se.natusoft.tools.fileeditor;
 
-import se.natusoft.tools.codelicmgr.annotations.*;
-import se.natusoft.tools.codelicmgr.enums.Source;
 import se.natusoft.tools.fileeditor.internal.BufferWrapper;
 import se.natusoft.tools.fileeditor.internal.TextPos;
 
@@ -20,40 +55,6 @@ import java.util.List;
  * Please note that line and column numbers start at 1 while TextBuffer
  * lines start at 0!
  */
-@Project(
-    name="FileEditor",
-    codeVersion="2.0",
-    description="Provides a programmable only text file editor. No gui is available. It supplies" +
-                "most of the features you expect from an editor including selections."
-)
-@Copyright(year="2009", holder="Natusoft AB", rights="All rights reserved.")
-@License(
-    type="Apache",
-    version="2.0",
-    description="Apache Software License",
-    source=Source.OPEN,
-    text={
-        "Licensed under the Apache License, Version 2.0 (the 'License');",
-        "you may not use this file except in compliance with the License.",
-        "You may obtain a copy of the License at",
-        "",
-        "  http://www.apache.org/licenses/LICENSE-2.0",
-        "",
-        "Unless required by applicable law or agreed to in writing, software",
-        "distributed under the License is distributed on an 'AS IS' BASIS,",
-        "WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",
-        "See the License for the specific language governing permissions and",
-        "limitations under the License."
-    }
-)
-@Author(
-    name="Tommy Svensson",
-    changes={
-        @Change(when="2008-12-03", description="Created"),
-        @Change(when="2009-10-31", description="Added findLast() + insertAbove(), a few bugfixes with insert (didn't insert below) and some cosmetics."),
-        @Change(when="2009-11-09", description="Added a few find and match methods using regexps.")
-    }
-)
 public class TextFileEditor {
 
     /** Means end of file in the buffer held by the editor. */
