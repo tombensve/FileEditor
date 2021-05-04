@@ -20,4 +20,7 @@ Usage: [Markdown](https://github.com/tombensve/FileEditor/blob/master/docs/FileE
 
 ----
 
-[Maven repo setup](https://github.com/tombensve/CommonStuff/blob/master/docs/MavenRepository.md)
+# Binaries
+
+[Accessing binaries](https://github.com/tombensve/CommonStuff/blob/master/docs/AccessingBinaries.md)
+
