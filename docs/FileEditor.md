@@ -1,4 +1,19 @@
-# FileEditor 2.0.3
+# FileEditor 2.0.5
+
+## Versions
+
+### Previous
+
+**Probably several ... **
+
+### 2.1.11
+
+This version have removed the use of CodeLicenceManager due to CodeLicenseManager uses this, 
+and it has a larger need to this than this has of CodeLicenceManager!
+
+This was done quite a long time ago! But I should still have been smarter than creating 
+circular dependencies!!! My doctor has forbidden me to stress, and getting angry at others
+and myself since that causes stress! Sometimes that is a really difficult rule to follow! 
 
 ## Introduction
 
@@ -105,5 +120,3 @@ Here is an example of usage copied from another tool where I use FileEditor to u
 
 
 There is not much more to say about this. 
-
-
