@@ -1,12 +1,4 @@
-# FileEditor 2.0.5
-
-## Versions
-
-### Previous
-
-**Probably several ... **
-
-### 2.1.11
+# FileEditor 2.1.11
 
 This version have removed the use of CodeLicenceManager due to CodeLicenseManager uses this, 
 and it has a larger need to this than this has of CodeLicenceManager!

@@ -19,6 +19,9 @@
     </description>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <bytecode>11</bytecode>
+
         <copyrightYear>2012</copyrightYear>
         <copyrightHolder>Bengt _Tommy_ Svensson</copyrightHolder>
         <copyrightHolderWeb>https://github.com/tombensve//</copyrightHolderWeb>
@@ -84,15 +87,6 @@
         Building
     -->
     <build>
-        <extensions>
-            <!-- Not needed any more due to Repsy!
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ftp</artifactId>
-                <version>2.3</version>
-            </extension>
-            -->
-        </extensions>
 
         <plugins>
             <!--
@@ -100,10 +94,10 @@
             -->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.0.2</version>
+                <version>3.13.0</version>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>${bytecode}</source>
+                    <target>${bytecode}</target>
                 </configuration>
             </plugin>
 
@@ -112,6 +106,7 @@
             -->
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.7.0</version>
                 <!--version>2.2-beta-5</version-->
                 <configuration>
                     <descriptors>
