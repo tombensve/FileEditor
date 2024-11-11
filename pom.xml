@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>se.natusoft.tools.fileeditor</groupId>
     <artifactId>FileEditor</artifactId>
     <packaging>jar</packaging>
-    <version>2.1.11</version><!-- major.minor.byte code version -->
+    <version>2.1.0-BC11</version><!-- major.minor.byte code version -->
     <name>FileEditor</name>
 
     <url>https://github.com/tombensve/FileEditor</url>
@@ -20,16 +21,17 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <bytecode>11</bytecode>
+        <byteCode>11</byteCode>
 
         <copyrightYear>2012</copyrightYear>
-        <copyrightHolder>Bengt _Tommy_ Svensson</copyrightHolder>
+        <copyrightHolder>Tommy Svensson</copyrightHolder>
         <copyrightHolderWeb>https://github.com/tombensve/</copyrightHolderWeb>
+        <lastUpdated>2024-10</lastUpdated>
     </properties>
 
     <organization>
-        <name>${copyrightHolder}</name>
-        <url>${copyrightHolderWeb}</url>
+        <name>Tommy Svensson</name>
+        <url>https://github.com/tombensve/</url>
     </organization>
 
     <inceptionYear>${copyrightYear}</inceptionYear>
@@ -78,7 +80,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -96,8 +98,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>${bytecode}</source>
-                    <target>${bytecode}</target>
+                    <source>${byteCode}</source>
+                    <target>${byteCode}</target>
                 </configuration>
             </plugin>
 
@@ -127,105 +129,11 @@
                 <version>3.1.2</version>
             </plugin>
 
-            <!-- This cannot be used since CodeLicenseManager uses this code!!!
-                Copy relevant license files to target on install.
-            -->
-            <!--
-        <plugin>
-            <groupId>se.natusoft.tools.codelicmgr</groupId>
-            <artifactId>CodeLicenseManager-maven-plugin</artifactId>
-            <version>2.2.6</version>
-
-            <dependencies>
-                <dependency>
-                    <groupId>se.natusoft.tools.codelicmgr</groupId>
-                    <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
-                    <version>2.2.6</version>
-                </dependency>
-            </dependencies>
-                <executions>
-                    <execution>
-                        <id>install-licence-info</id>
-                        <goals>
-                            <goal>install</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-
-                            <installOptions>
-                                <verbose>true</verbose>
-                                <licenseDir>target/license</licenseDir>
-                                <thirdpartyLicenseDir>target/license/thirdparty</thirdpartyLicenseDir>
-                            </installOptions>
-
-                            <createLicensesMarkdown>true</createLicensesMarkdown>
-                            <markdownTargetSubdir>docs</markdownTargetSubdir>
-                            <markdownLinkPrefix>https://github.com/tombensve/FileEditor/blob/master/docs/</markdownLinkPrefix>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            -->
-
-            <!--
-            And this cannot be used either since MarkdownDoc uses this!
-
-            <plugin>
-                <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
-                <artifactId>markdowndoc-maven-plugin</artifactId>
-                <version>3.0.1</version>
-
-                <dependencies>
-                    <dependency>
-                        <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
-                        <artifactId>markdown-doc-lib</artifactId>
-                        <version>3.0.1</version>
-                    </dependency>
-                </dependencies>
-
-                <executions>
-                    <execution>
-                        <id>generate-pdf-docs</id>
-                        <goals>
-                            <goal>doc</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-
-                            <generatorOptions>
-                                <generator>pdf</generator>
-                                <inputPaths>
-                                    docs/FileEditor.md,
-                                    Docs/parts/H1Licenses.mdpart,
-                                    Docs/licenses.md,
-                                    Docs/parts/H1LicenseTexts.mdpart,
-                                    Docs/.*-.*.md
-                                </inputPaths>
-                            </generatorOptions>
-
-                            <pdfGeneratorOptions>
-                                <resultFile>docs/FileEditor.pdf</resultFile>
-                                <pageSize>A4</pageSize>
-                                <title>File Editor</title>
-                                <subject>User Guide</subject>
-                                <version>2.0.2</version>
-                                <author>Tommy Svensson</author>
-                                <copyright>Copyright © 2012 Natusoft AB</copyright>
-                                <generateTitlePage>true</generateTitlePage>
-                                <generateTOC>true</generateTOC>
-                            </pdfGeneratorOptions>
-
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            -->
         </plugins>
     </build>
 
     <!--
         Site / Reporting
-    -->
     <reporting>
         <plugins>
             <plugin>
@@ -239,13 +147,14 @@
             </plugin>
         </plugins>
     </reporting>
+    -->
 
     <!--
         Profiles
     -->
     <profiles>
         <!--
-        This cannot be uses since CodeLicenseManager uses this!
+            The following profiles cannot be used during normal build due to circular dependencies!
         -->
 
         <profile>
@@ -255,13 +164,14 @@
                     <plugin>
                         <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                         <artifactId>markdowndoc-maven-plugin</artifactId>
-                        <version>3.0.1</version>
+                        <version>3.1.11</version>
 
                         <dependencies>
                             <dependency>
                                 <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                                 <artifactId>markdown-doc-lib</artifactId>
-                                <version>3.0.1</version>
+                                <!-- If this is red marked then you are using IDEA! -->
+                                <version>3.2.11</version>
 
                             </dependency>
                         </dependencies>
@@ -299,6 +209,111 @@
 
                 </plugins>
             </build>
+        </profile>
+
+        <profile>
+            <id>markdown-docs</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                        <artifactId>markdowndoc-maven-plugin</artifactId>
+                        <version>3.1.11</version>
+
+                        <dependencies>
+                            <dependency>
+                                <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                                <artifactId>markdown-doc-lib</artifactId>
+                                <version>3.2.11</version>
+                            </dependency>
+                        </dependencies>
+
+                        <executions>
+                            <execution>
+                                <id>generate-pdf-docs</id>
+                                <goals>
+                                    <goal>doc</goal>
+                                </goals>
+                                <phase>install</phase>
+                                <configuration>
+
+                                    <generatorOptions>
+                                        <generator>pdf</generator>
+                                        <inputPaths>
+                                            docs/FileEditor.md,
+                                            Docs/parts/H1Licenses.mdpart,
+                                            Docs/licenses.md,
+                                            Docs/parts/H1LicenseTexts.mdpart,
+                                            Docs/.*-.*.md
+                                        </inputPaths>
+                                    </generatorOptions>
+
+                                    <pdfGeneratorOptions>
+                                        <resultFile>docs/FileEditor.pdf</resultFile>
+                                        <pageSize>A4</pageSize>
+                                        <title>File Editor</title>
+                                        <subject>User Guide</subject>
+                                        <version>2.0.2</version>
+                                        <author>Tommy Svensson</author>
+                                        <copyright>Copyright © 2012 Natusoft AB</copyright>
+                                        <generateTitlePage>true</generateTitlePage>
+                                        <generateTOC>true</generateTOC>
+                                    </pdfGeneratorOptions>
+
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>clm</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>se.natusoft.tools.codelicmgr</groupId>
+                        <artifactId>CodeLicenseManager-maven-plugin</artifactId>
+                        <version>2.2.6</version>
+
+                        <dependencies>
+                            <dependency>
+                                <groupId>se.natusoft.tools.codelicmgr</groupId>
+                                <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
+                                <version>2.2.6</version>
+                            </dependency>
+                        </dependencies>
+                        <executions>
+                            <execution>
+                                <id>install-licence-info</id>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                                <phase>install</phase>
+                                <configuration>
+
+                                    <installOptions>
+                                        <verbose>true</verbose>
+                                        <licenseDir>target/license</licenseDir>
+                                        <thirdpartyLicenseDir>target/license/thirdparty</thirdpartyLicenseDir>
+                                    </installOptions>
+
+                                    <createLicensesMarkdown>true</createLicensesMarkdown>
+                                    <markdownTargetSubdir>docs</markdownTargetSubdir>
+                                    <markdownLinkPrefix>https://github.com/tombensve/FileEditor/blob/master/docs/
+                                    </markdownLinkPrefix>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                </plugins>
+            </build>
+
         </profile>
     </profiles>
 </project>
